@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-infineasdk" version="1.0.14" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="cordova-plugin-infineasdk" version="1.0.15" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>InfineaSDKCordova</name>
     <js-module name="InfineaSDKCordova" src="www/InfineaSDKCordova.js">
         <clobbers target="Infinea" />
@@ -50,8 +50,8 @@
         <framework src="WebKit.framework" />
 
         <!--InfineaSDK framework-->
-        <source-file src="src/ios/InfineaSDK.framework" framework="true" target-dir="lib" />
-        <framework src="src/ios/InfineaSDK.framework" embed="true" custom="true"/>
+        <source-file src="src/ios/InfineaSDK.xcframework" framework="true" target-dir="lib" />
+        <framework src="src/ios/InfineaSDK.xcframework" embed="true" custom="true"/>
         
     </platform>
 </plugin>
